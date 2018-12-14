@@ -16,7 +16,7 @@ import java.util.List;
 /**
 * Created by CodeGenerator on 2018/12/11.
 */
-//查询案例http://localhost:8080/book/list
+//查询案例http://localhost:8888/book/list
 @RestController
 @RequestMapping("/book")
 public class BookController {
