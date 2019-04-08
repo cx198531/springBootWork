@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping
 public class BeautifulGirlContrller {
 
+	//csdcsdac
     @Value("${cubSize}")
     private String cubSize;
 
