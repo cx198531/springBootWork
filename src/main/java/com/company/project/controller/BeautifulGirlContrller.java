@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.company.project.uni.util.YCUtil;
 /**
  * 测试获取配置文件参数方法1常用
  * @author user
@@ -13,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping
 public class BeautifulGirlContrller {
 
+	//csdcsdac
     @Value("${cubSize}")
     private String cubSize;
 
@@ -31,7 +34,9 @@ public class BeautifulGirlContrller {
     }
     
     @RequestMapping(value = "/test2",method = RequestMethod.GET)
-    public String Test2(){
-        return "test2";
+    public void Test2(){
+    	YCUtil sessionid = new YCUtil();
+    	 YCUtil.loginAuth();
+//        return sid;
     }
 }
